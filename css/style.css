@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-top: 4rem;
+}
+
 .logo{
     width: 4rem;
     height: 4rem;
@@ -27,6 +31,17 @@
 
 .boton-nav:hover{
     box-shadow: 1px 2px 5px black;
+}
+
+.link-estilo:hover {
+    color: #f7e7cd;
+}
+
+.carrito-badge {
+    font-size: 0.6rem;
+    position: relative;
+    top: -10px;
+    left: -8px;
 }
 
 .fondo{
@@ -61,7 +76,7 @@
     background-color: #273624;
     border: 1px solid #f7e7cd; 
     border-radius: 10px;
-    height: 50vh;
+    height: auto;
     color: #f7e7cd; 
     font-weight: 600;
 }
@@ -72,14 +87,50 @@
 
 .producto img{
     padding: 10px;
-    height: 40vh;
+    aspect-ratio: 4/3;
     object-fit: cover;
     
 }
 
 
-/* @media(max-width: 600px){
-    .fondo{
-        height: 20vh;
+
+footer {
+    background-color: #273624;
+    color: #f7e7cd;            
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.footer-brand {
+    display: flex;
+}
+
+.footer-brand p{
+    color: #f7e7cd;
+    margin-top: 1rem;
+}
+
+.footer-logo {
+    width: 3.5rem;  
+    height: 3.5rem;
+}
+
+.footer-social .social-links a {
+    color: #f7e7cd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-social .social-links a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
-} */
+}
