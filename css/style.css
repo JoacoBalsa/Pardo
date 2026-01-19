@@ -6,11 +6,17 @@
 
 body{
     padding-top: 4rem;
+    background-color: #f7e7cd; 
+
 }
 
 .logo{
     width: 4rem;
     height: 4rem;
+}
+
+header{
+    margin-bottom: 1.5rem;
 }
 
 .fondo-nav{
@@ -58,7 +64,6 @@ body{
 }
 
 .productos {
-    background-color: #f7e7cd; 
     padding: 4rem 2rem;
     color: #273624;
     text-align: center;
@@ -101,6 +106,10 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .footer-brand {
@@ -126,6 +135,33 @@ footer {
 
 .footer-social .social-links a:hover {
     color: #ffffff;
+}
+
+.prueba{
+    border-radius: 0px;
+    border: 1px solid #273624;
+}
+
+.paginado{
+
+    color: #273624;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid #273624;
+
+}
+
+.paginado:hover{
+    box-shadow: 1px 1px 5px #273624;
+    color: #273624;
+    border-color: #273624;
+}
+
+.paginado.active {
+    background-color: #f7e7cd !important;
+    color: black !important;
+    border-color: black !important;
+    
 }
 
 @media (max-width: 600px) {
