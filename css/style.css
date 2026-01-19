@@ -87,7 +87,7 @@ body{
 
 .producto img{
     padding: 10px;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
     object-fit: cover;
     
 }
