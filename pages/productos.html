@@ -30,7 +30,7 @@
                         <a class="nav-link link-estilo" href="../index.html">Inicio</a>
                         <a class="nav-link link-estilo" href="#">Productos</a>
                         <a class="nav-link link-estilo" href="./about.html">About Us</a>
-                        <a class="nav-link link-estilo" href="./pages/carrito.html">
+                        <a class="nav-link link-estilo" href="./carrito.html">
                             <i class="bi bi-cart"></i>
                             <span class="badge rounded-pill bg-danger cart-badge carrito-badge">1</span> </a>
                     </div>
@@ -41,71 +41,212 @@
     </header>
 
     <main>
-        <ul class="nav nav-tabs justify-content-center prueba" id="misPestanas" role="tablist">
+        <ul class="nav nav-tabs justify-content-center tabs" id="misPestanas" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link paginado" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                    role="tab" aria-selected="true">Inicio</button>
+                <button class="nav-link active paginado" id="gorras-tab" data-bs-toggle="tab" data-bs-target="#gorras"
+                    type="button" role="tab" aria-selected="true">Gorras</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link paginado" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-selected="false">Perfil</button>
+                <button class="nav-link paginado" id="remeras-tab" data-bs-toggle="tab" data-bs-target="#remeras"
+                    type="button" role="tab" aria-selected="false">Remeras</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link paginado" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-                    role="tab" aria-selected="false">Contacto</button>
+                <button class="nav-link paginado" id="hoodies-tab" data-bs-toggle="tab" data-bs-target="#hoodies"
+                    type="button" role="tab" aria-selected="false">Hoodies</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link paginado" id="musculosas-tab" data-bs-toggle="tab" data-bs-target="#musculosas"
+                    type="button" role="tab" aria-selected="false">Musculosas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link paginado" id="medias-tab" data-bs-toggle="tab" data-bs-target="#medias"
+                    type="button" role="tab" aria-selected="false">Medias</button>
             </li>
         </ul>
 
         <div class="tab-content border border-top-0 p-3" id="misPestanasContent">
 
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h3>Página de Inicio</h3>
-                <p>Este es el contenido visible por defecto. Aquí puedes poner texto, imágenes o grid de bootstrap.</p>
+            <div class="tab-pane fade show active" id="gorras" role="tabpanel" aria-labelledby="gorras-tab">
+                <h3 class="mb-4 text-center">Nuestras Gorras</h3>
+                <section class="articulos">
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-verde.png" alt="Gorro verde"></div>
+                        <div class="info-producto">
+                            <h4>Gorra Classic</h4>
+                            <p class="precio">$500.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-beige.png" alt="Gorro beige"></div>
+                        <div class="info-producto">
+                            <h4>Gorra Classic</h4>
+                            <p class="precio">$500.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-azul.png" alt="Gorro Azul"></div>
+                        <div class="info-producto">
+                            <h4>Gorra Classic</h4>
+                            <p class="precio">$500.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-lana-verde.png" alt="Gorro Lana Verde">
+                        </div>
+                        <div class="info-producto">
+                            <h4>Gorro Lana</h4>
+                            <p class="precio">$450.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-lana-beige.png" alt="Gorro Lana Beige">
+                        </div>
+                        <div class="info-producto">
+                            <h4>Gorro Lana</h4>
+                            <p class="precio">$450.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/gorros/gorro-lana-azul.png" alt="Gorro Lana Azul">
+                        </div>
+                        <div class="info-producto">
+                            <h4>Gorro Lana</h4>
+                            <p class="precio">$450.00</p><button class="btn btn-outline-light btn-sm ver-detalle">Ver
+                                Detalle</button>
+                        </div>
+                    </article>
+                </section>
             </div>
 
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <h3>Perfil de Usuario</h3>
-                <p>Aquí va la información del perfil. Fíjate en el efecto 'fade' al cambiar.</p>
+            <div class="tab-pane fade" id="remeras" role="tabpanel" aria-labelledby="remeras-tab">
+                <h3 class="mb-4 text-center">Remeras Unisex</h3>
+                <section class="articulos">
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/remeras/remera-verde.png" alt="Remera Verde"></div>
+                        <div class="info-producto">
+                            <h4>Remera Verde</h4>
+                            <p class="precio">$700.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/remeras/remera-beige.png" alt="Remera Beige"></div>
+                        <div class="info-producto">
+                            <h4>Remera Beige</h4>
+                            <p class="precio">$700.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/remeras/remera-azul.png" alt="Remera Azul"></div>
+                        <div class="info-producto">
+                            <h4>Remera Azul</h4>
+                            <p class="precio">$700.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                </section>
             </div>
 
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <h3>Formulario de Contacto</h3>
-                <input type="text" class="form-control mb-2" placeholder="Tu nombre">
-                <button class="btn btn-primary">Enviar</button>
+            <div class="tab-pane fade" id="hoodies" role="tabpanel" aria-labelledby="hoodies-tab">
+                <h3 class="mb-4 text-center">Hoodies & Canguros</h3>
+                <section class="articulos">
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/hoodies/hoodie-verde.png" alt="Hoodie Verde"></div>
+                        <div class="info-producto">
+                            <h4>Hoodie Verde</h4>
+                            <p class="precio">$1200.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/hoodies/hoodie-beige.png" alt="Hoodie Beige"></div>
+                        <div class="info-producto">
+                            <h4>Hoodie Beige</h4>
+                            <p class="precio">$1200.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/hoodies/hoodie-azul.png" alt="Hoodie Azul"></div>
+                        <div class="info-producto">
+                            <h4>Hoodie Azul</h4>
+                            <p class="precio">$1200.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                </section>
             </div>
+
+            <div class="tab-pane fade" id="musculosas" role="tabpanel" aria-labelledby="musculosas-tab">
+                <h3 class="mb-4 text-center">Musculosas Verano</h3>
+                <section class="articulos">
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/musculosas/musculosa-verde.png"
+                                alt="Musculosa Verde"></div>
+                        <div class="info-producto">
+                            <h4>Musculosa Verde</h4>
+                            <p class="precio">$550.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/musculosas/musculosa-beige.png"
+                                alt="Musculosa Beige"></div>
+                        <div class="info-producto">
+                            <h4>Musculosa Beige</h4>
+                            <p class="precio">$550.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/musculosas/musculosa-azul.png" alt="Musculosa Azul">
+                        </div>
+                        <div class="info-producto">
+                            <h4>Musculosa Azul</h4>
+                            <p class="precio">$550.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="medias" role="tabpanel" aria-labelledby="medias-tab">
+                <h3 class="mb-4 text-center">Medias Largas</h3>
+                <section class="articulos">
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/medias/medias-verdes.png" alt="Medias Verdes"></div>
+                        <div class="info-producto">
+                            <h4>Medias Verdes</h4>
+                            <p class="precio">$300.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/medias/medias-beige.png" alt="Medias Beige"></div>
+                        <div class="info-producto">
+                            <h4>Medias Beige</h4>
+                            <p class="precio">$300.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                    <article class="articulo-card">
+                        <div class="img-container"><img src="../img/medias/medias-azules.png" alt="Medias Azules"></div>
+                        <div class="info-producto">
+                            <h4>Medias Azules</h4>
+                            <p class="precio">$300.00</p>
+                            <button class="btn btn-outline-light btn-sm ver-detalle">Ver Detalle</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
         </div>
-        <!-- <h2>Explora todos nuestros productos</h2>
-        
-        <div class="contenedor-productos">
-            <div class="producto">
-                <h3>Gorro</h3>
-                <img src="../img/gorros.jpg" alt="Gorros">
-                <p>$300.00</p>
-                <a href="#">Comprar</a>
-            </div>
-
-            <div class="producto">
-                <h3>Musculosa</h3>
-                <img src="../img/musculosas.jpg" alt="Musculosas">
-                <p>$550.00</p>
-                <a href="#">Comprar</a>
-            </div>
-
-            <div class="producto">
-                <h3>Producto 3</h3>
-                <img src="../img/musculosas2.jpg" alt="Musculosas">
-                <p>$550.00</p>
-                <a href="#">Comprar</a>
-            </div>
-            
-            <div class="producto">
-                <h3>Camiseta</h3>
-                <img src="../img/camiseta.jpg" alt="Camiseta">
-                <p>$700.00</p>
-                <a href="#">Comprar</a>
-            </div>
-
-        </div> -->
     </main>
     <footer>
         <div class="footer-brand">
