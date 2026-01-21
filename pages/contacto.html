@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pardo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top fondo-nav">
+            <div class="container-fluid">
+
+                <a class="navbar-brand titulo-nav" href="#">
+                    <img src="../img/logo.png" alt="Logo" class="logo">
+                    PARDO
+                </a>
+                <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link link-estilo" href="../index.html">Inicio</a>
+                        <a class="nav-link link-estilo" href="./productos.html">Productos</a>
+                        <a class="nav-link link-estilo" href="./about.html">About Us</a>
+                        <a class="nav-link link-estilo" href="#">Contactanos</a>
+                        <a class="nav-link link-estilo" href="./carrito.html">
+                            <i class="bi bi-cart"></i>
+                            <span class="badge rounded-pill bg-danger cart-badge carrito-badge">2</span> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container my-5 pb-5">
+            <div class="row g-4 contactanos-wrapper">
+
+                <h2 class="text-center mb-4 titulo-contacto">Contactanos</h2>
+
+                <section class="col-md-6">
+                    <div class="contact-box h-100">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control input-form" id="nombre"
+                                    placeholder="Ingresa tu Nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo</label>
+                                <input type="email" class="form-control input-form" id="correo"
+                                    placeholder="Ingresa tu Correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control input-form" rows="5" id="mensaje"
+                                    placeholder="Ingresa tu Mensaje"></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-enviar">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="col-md-6">
+                    <div class="contact-box h-100">
+                        <div class="mb-4 info-item">
+                            <h3><i class="bi bi-geo-alt-fill me-2"></i>Ubicación</h3>
+                            <p>Calle Falsa 123, Montevideo, Uruguay.</p>
+                        </div>
+                        <div class="mb-4 info-item">
+                            <h3><i class="bi bi-envelope-fill me-2"></i>Email</h3>
+                            <p>contacto@pardo.uy</p>
+                        </div>
+                        <div class="mb-4 info-item">
+                            <h3><i class="bi bi-whatsapp me-2"></i>Whatsapp</h3>
+                            <p>+598 99 123 456</p>
+                        </div>
+                        <div class="ratio ratio-16x9 map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0000000000005!2d-56.16453138476203!3d-34.90111268038337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81ce1df254d3%3A0x6295779c45014603!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1642621000000!5m2!1ses-419!2suy"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-brand">
+            <img class="footer-logo" src="../img/logo.png" alt="Logo Pardo">
+            <p>2024 Pardo. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-social">
+            <div class="social-links">
+                <a href="https://www.instagram.com/pardo.uy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">
+                    <span class="icon">📸</span> Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

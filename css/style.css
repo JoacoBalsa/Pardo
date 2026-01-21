@@ -215,6 +215,312 @@ header {
     font-size: 1.2rem;
 }
 
+
+.titulo-contacto {
+    color: #273624; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.contact-box {
+    background-color: #273624;
+    color: #f7e7cd;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-box .form-label {
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.input-form {
+    background-color: #f7e7cd;
+    border: 2px solid #f7e7cd;
+    color: #273624;
+    font-weight: 500;
+}
+
+.input-form::placeholder {
+    color: #273624; 
+    opacity: 0.7;
+}
+
+
+.btn-enviar {
+    background-color: #f7e7cd;
+    color: #273624;
+    font-weight: 600;
+    border: 2px solid #f7e7cd;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: transparent;
+    color: #f7e7cd;
+    border: 2px solid #f7e7cd;
+}
+
+.info-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f7e7cd;
+}
+
+.info-item p {
+    margin-left: 2rem;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+
+}
+
+/* --- PAGINA CARRITO --- */
+
+/* Estructura general */
+.contenedor-principal {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.titulo-seccion {
+    color: #273624;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+/* --- ENCABEZADOS DE TABLA (Desktop) --- */
+.carrito-header {
+    display: flex; /* Flexbox activado */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #273624;
+    color: #273624;
+    font-weight: 700;
+}
+
+/* Anchos definidos para alinear con los items */
+.header-prod { width: 50%; }
+.header-cant { width: 25%; text-align: center; }
+.header-sub  { width: 25%; text-align: right; }
+
+
+/* --- ITEM DEL CARRITO --- */
+.carrito-item {
+    display: flex; /* Flexbox para alinear producto, cantidad y precio */
+    align-items: center; /* Centrado vertical */
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(39, 54, 36, 0.3); /* Verde con transparencia */
+}
+
+/* 1. Columna Producto */
+.item-producto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-wrapper {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border: 1px solid #273624;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #273624;
+    margin: 0;
+}
+
+.item-detalles {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+.item-precio-movil {
+    display: none; /* Oculto por defecto en desktop */
+    font-weight: 700;
+    color: #273624;
+    margin-top: 0.25rem;
+}
+
+/* 2. Columna Cantidad */
+.item-cantidad {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    border: 1px solid #273624;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-cantidad {
+    background: transparent;
+    border: none;
+    color: #273624;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-cantidad:hover {
+    background-color: #273624;
+    color: #f7e7cd;
+}
+
+.input-cantidad {
+    width: 40px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-weight: 600;
+    color: #273624;
+}
+
+.input-cantidad:focus {
+    outline: none;
+}
+
+/* 3. Columna Subtotal */
+.item-subtotal {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    align-items: center;
+    gap: 1rem;
+}
+
+.precio-desktop {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #273624;
+}
+
+.btn-eliminar {
+    background: none;
+    border: none;
+    color: #dc3545; /* Rojo standard bootstrap o puedes usar tu verde */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.1);
+}
+
+
+/* --- ACCIONES --- */
+.acciones-carrito {
+    margin-top: 1.5rem;
+}
+
+.link-seguir {
+    text-decoration: none;
+    color: #273624;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link-seguir:hover {
+    text-decoration: underline;
+}
+
+
+/* --- TARJETA RESUMEN (Sticky) --- */
+.resumen-card {
+    background-color: #273624;
+    color: #f7e7cd;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    
+    /* Sticky logic movida al CSS */
+    position: sticky;
+    top: 6rem;
+    z-index: 10;
+}
+
+.resumen-titulo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.resumen-fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.separador {
+    height: 1px;
+    background-color: #f7e7cd;
+    opacity: 0.5;
+    margin: 1.5rem 0;
+}
+
+.resumen-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.btn-finalizar {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f7e7cd;
+    color: #273624;
+    font-weight: 700;
+    border: 2px solid #f7e7cd;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-finalizar:hover {
+    background-color: transparent;
+    color: #f7e7cd;
+}
+
+.compra-segura {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    
+}
+
 footer {
     background-color: #273624;
     color: #f7e7cd;
@@ -272,5 +578,37 @@ footer {
     .about{
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .carrito-header {
+        display: none;
+    }
+
+    .carrito-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-producto {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .item-precio-movil {
+        display: block; 
+    }
+
+    .precio-desktop {
+        display: none;
+    }
+
+    .item-cantidad {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .item-subtotal {
+        width: 50%;
+        justify-content: flex-end;
     }
 }
