@@ -1,0 +1,65 @@
+@use '../utilities/variables' as *;
+
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 0;
+  margin-bottom: 6rem;
+  gap: 10px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articulo-card {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.info-producto {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: $default-font-weight;
+  }
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: $secondary-color;
+}
+
+.ver-detalle {
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $selection-color;
+    color: $secondary-color;
+  }
+}

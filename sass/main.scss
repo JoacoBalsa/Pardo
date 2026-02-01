@@ -1,0 +1,14 @@
+@use 'base/reset';
+@use 'layout/body';
+@use 'components/navbar';
+@use 'layout/header';
+@use 'components/index_banner';
+@use 'components/productos_index';
+@use 'components/paginado_productos';
+@use 'components/articulos_productos';
+@use 'layout/about_page';
+@use 'layout/contact_page';
+@use 'layout/carrito_page';
+@use 'layout/footer';
+@use 'components/selection';
+@use 'layout/media_query';

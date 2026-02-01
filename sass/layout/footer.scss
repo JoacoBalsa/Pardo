@@ -1,0 +1,37 @@
+@use '../utilities/variables' as *;
+
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-brand {
+  display: flex;
+  p {
+    color: $secondary-color;
+    margin-top: 1rem;
+  }
+}
+
+.footer-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.footer-social .social-links a {
+  color: $secondary-color;
+  text-decoration: none;
+  font-weight: $default-font-weight;
+  font-size: 1.1rem;
+  &:hover{
+    color: #ffffff;
+  }
+}

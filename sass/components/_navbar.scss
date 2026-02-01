@@ -1,0 +1,34 @@
+@use '../utilities/variables' as *;
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.fondo-nav {
+  background-color: $primary-color;
+}
+
+.titulo-nav {
+  font-weight: $default-font-weight;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.boton-nav {
+  border: 2px solid $border-color-nav;
+  &:hover {
+    box-shadow: 1px 2px 5px black;
+  }
+}
+
+.link-estilo:hover {
+  color: $secondary-color;
+}
+
+.carrito-badge {
+  font-size: 0.6rem;
+  position: relative;
+  top: -10px;
+  left: -8px;
+}

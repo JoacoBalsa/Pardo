@@ -1,0 +1,60 @@
+@use '../utilities/variables' as *;
+
+.titulo-contacto {
+  color: $primary-color;
+  font-weight: $default-font-weight;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.contact-box {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .form-label {
+    font-weight: $default-font-weight;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.input-form {
+  background-color: $secondary-color;
+  border: 2px solid $secondary-color;
+  color: $primary-color;
+  font-weight: 500;
+  &::placeholder {
+    color: $primary-color;
+    opacity: 0.7;
+  }
+}
+
+.btn-enviar {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-weight: $default-font-weight;
+  border: 2px solid $secondary-color;
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+  }
+}
+
+.info-item {
+  h3 {
+    font-size: 1.3rem;
+    font-weight: $default-font-weight;
+    color: $secondary-color;
+  }
+  p {
+    margin-left: 2rem;
+  }
+}
+
+.map-container iframe {
+  border-radius: 10px;
+}

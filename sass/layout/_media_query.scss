@@ -1,0 +1,48 @@
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .articulos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .carrito-header {
+    display: none;
+  }
+
+  .carrito-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-producto {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .item-precio-movil {
+    display: block;
+  }
+
+  .precio-desktop {
+    display: none;
+  }
+
+  .item-cantidad {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .item-subtotal {
+    width: 50%;
+    justify-content: flex-end;
+  }
+}

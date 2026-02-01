@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+
+.tabs {
+  border-radius: 0px;
+  border: 1px solid $primary-color;
+}
+
+.paginado {
+  color: $primary-color;
+  font-weight: $default-font-weight;
+  font-size: 1.1rem;
+  border: 2px solid $primary-color;
+  &.active {
+    background-color: $secondary-color !important;
+    color: black !important;
+    border-color: black !important;
+  }
+  &:hover {
+    box-shadow: 1px 1px 5px $primary-color;
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}

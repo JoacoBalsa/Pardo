@@ -1,0 +1,6 @@
+@use '../utilities/variables' as *; 
+
+::selection {
+  background-color: $selection-color;
+  color: $secondary-color;
+}
