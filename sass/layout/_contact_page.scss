@@ -8,6 +8,7 @@
 }
 
 .contact-box {
+  @include flex-base(column,space-evenly,normal);
   background-color: $primary-color;
   color: $secondary-color;
   padding: 2rem;

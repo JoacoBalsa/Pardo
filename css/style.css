@@ -209,6 +209,10 @@ header {
 }
 
 .contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: normal;
   background-color: #273624;
   color: #f7e7cd;
   padding: 2rem;
