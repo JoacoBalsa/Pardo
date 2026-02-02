@@ -14,7 +14,7 @@
 }
 
 .carrito-header {
-  display: flex;
+  @include flex-base();
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid $primary-color;
@@ -35,17 +35,15 @@
 }
 
 .carrito-item {
-  display: flex;
-  align-items: center;
+  @include flex-base();
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid rgba(39, 54, 36, 0.3);
 }
 
 .item-producto {
+  @include flex-base();
   width: 50%;
-  display: flex;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -85,13 +83,11 @@
 
 .item-cantidad {
   width: 25%;
-  display: flex;
-  justify-content: center;
+  @include flex-base();
 }
 
 .selector-cantidad {
-  display: flex;
-  align-items: center;
+  @include flex-base();
   border: 1px solid $primary-color;
   border-radius: 5px;
   overflow: hidden;
@@ -129,6 +125,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include flex-base(row,flex-end);
   gap: 1rem;
 }
 
@@ -176,8 +173,7 @@
 }
 
 .resumen-fila {
-  display: flex;
-  justify-content: space-between;
+  @include flex-base(row,space-between);
   margin-bottom: 1rem;
 }
 

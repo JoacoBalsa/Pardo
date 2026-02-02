@@ -4,3 +4,11 @@ $border-color-nav: #1d271a;
 $selection-color: #394e35;
 $eliminar-color: #dc3545;
 $default-font-weight: 600;
+
+@mixin flex-base($direccion: row, $central: center, $cruzado: center){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $central;
+    align-items: $cruzado;
+
+}

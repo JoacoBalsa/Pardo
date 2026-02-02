@@ -3,10 +3,8 @@
 footer {
   background-color: $primary-color;
   color: $secondary-color;
-  display: flex;
+  @include flex-base(row,space-around);
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
