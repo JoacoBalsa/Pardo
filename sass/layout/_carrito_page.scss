@@ -48,8 +48,8 @@
 }
 
 .img-wrapper {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   flex-shrink: 0;
   border: 1px solid $primary-color;
   border-radius: 8px;
@@ -122,9 +122,6 @@
 
 .item-subtotal {
   width: 25%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   @include flex-base(row,flex-end);
   gap: 1rem;
 }
@@ -164,6 +161,7 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
 }
 
 .resumen-titulo {
@@ -192,15 +190,7 @@
 
 .btn-finalizar {
   width: 100%;
-  padding: 0.75rem;
-  background-color: $secondary-color;
-  color: $primary-color;
-  font-weight: 700;
-  border: 2px solid $secondary-color;
-  &:hover {
-    background-color: transparent;
-    color: $secondary-color;
-  }
+  @include button-style();
 }
 
 .compra-segura {

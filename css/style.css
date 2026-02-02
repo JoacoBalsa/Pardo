@@ -234,15 +234,20 @@ header {
 .btn-enviar {
   background-color: #f7e7cd;
   color: #273624;
-  font-weight: 600;
   border: 2px solid #f7e7cd;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 .btn-enviar:hover {
   background-color: transparent;
   color: #f7e7cd;
-  border: 2px solid #f7e7cd;
+  border-color: #f7e7cd;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .info-item h3 {
@@ -317,8 +322,8 @@ header {
 }
 
 .img-wrapper {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   flex-shrink: 0;
   border: 1px solid #273624;
   border-radius: 8px;
@@ -398,9 +403,6 @@ header {
 .item-subtotal {
   width: 25%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -442,6 +444,7 @@ header {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
 }
 
 .resumen-titulo {
@@ -473,15 +476,22 @@ header {
 
 .btn-finalizar {
   width: 100%;
-  padding: 0.75rem;
   background-color: #f7e7cd;
   color: #273624;
-  font-weight: 700;
   border: 2px solid #f7e7cd;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 .btn-finalizar:hover {
   background-color: transparent;
   color: #f7e7cd;
+  border-color: #f7e7cd;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .compra-segura {
