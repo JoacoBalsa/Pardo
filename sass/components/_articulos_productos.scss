@@ -10,6 +10,7 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .articulo-card {
@@ -19,11 +20,18 @@
   border-radius: 10px;
   overflow: hidden;
   @include flex-base(column);
+  transition: transform 0.5s;
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 5px $primary-color;
+  }
+  
 }
 
 .img-container {
   width: 100%;
   aspect-ratio: 1/1;
+  
   @include flex-base();
   img {
     width: 100%;

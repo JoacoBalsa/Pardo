@@ -85,6 +85,7 @@ header {
   height: auto;
   color: #f7e7cd;
   font-weight: 600;
+  transition: transform 0.5s;
 }
 .producto img {
   padding: 10px;
@@ -92,6 +93,7 @@ header {
   object-fit: cover;
 }
 .producto:hover {
+  transform: translateY(-5px);
   box-shadow: 2px 2px 5px #273624;
 }
 
@@ -139,6 +141,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
+}
+.articulo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 5px #273624;
 }
 
 .img-container {
