@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *;
+@use '../utilities/mixin' as *;
 
 .logo {
   width: 4rem;
@@ -23,6 +24,7 @@
 }
 
 .link-estilo:hover {
+  @include transition(null,null,null);
   color: $secondary-color;
 }
 

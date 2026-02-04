@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *;
+@use '../utilities/mixin' as *;
 
 .articulos {
   display: grid;
@@ -50,11 +51,5 @@
 }
 
 .ver-detalle {
-  color: $secondary-color;
-  border: 1px solid $secondary-color;
-  background-color: $primary-color;
-  &:hover {
-    background-color: $selection-color;
-    color: $secondary-color;
-  }
+  @include button-style($primary-color,$secondary-color);
 }

@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *; 
+@use '../utilities/mixin' as *;
 
 ::selection {
   background-color: $selection-color;

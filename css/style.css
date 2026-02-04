@@ -32,6 +32,13 @@ body {
 }
 
 .link-estilo:hover {
+  transition: transform 0.5s ease;
+}
+.link-estilo:hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px solid #394e35;
+}
+.link-estilo:hover {
   color: #f7e7cd;
 }
 
@@ -98,6 +105,7 @@ header {
   font-weight: 600;
   font-size: 1.1rem;
   border: 2px solid #273624;
+  transition: ease-out 0.5s;
 }
 .paginado.active {
   background-color: #f7e7cd !important;
@@ -169,13 +177,26 @@ header {
 }
 
 .ver-detalle {
-  color: #f7e7cd;
-  border: 1px solid #f7e7cd;
   background-color: #273624;
+  color: #f7e7cd;
+  border: 2px solid #f7e7cd;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 .ver-detalle:hover {
-  background-color: #394e35;
-  color: #f7e7cd;
+  transition: transform 0.5s ease;
+}
+.ver-detalle:hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px solid #394e35;
+  background-color: #f7e7cd;
+  color: #273624;
+  border-color: #273624;
 }
 
 .about {
@@ -248,10 +269,14 @@ header {
   display: inline-block;
 }
 .btn-enviar:hover {
-  background-color: transparent;
+  transition: transform 0.5s ease;
+}
+.btn-enviar:hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px solid #394e35;
+  background-color: #273624;
   color: #f7e7cd;
   border-color: #f7e7cd;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .info-item h3 {
@@ -492,10 +517,14 @@ header {
   display: inline-block;
 }
 .btn-finalizar:hover {
-  background-color: transparent;
+  transition: transform 0.5s ease;
+}
+.btn-finalizar:hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px solid #394e35;
+  background-color: #273624;
   color: #f7e7cd;
   border-color: #f7e7cd;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .compra-segura {
