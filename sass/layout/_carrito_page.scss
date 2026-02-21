@@ -1,5 +1,5 @@
-@use '../utilities/variables' as *;
-@use '../utilities/mixin' as *;
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
 
 .contenedor-principal {
   margin-top: 3rem;
@@ -123,7 +123,7 @@
 
 .item-subtotal {
   width: 25%;
-  @include flex-base(row,flex-end);
+  @include flex-base(row, flex-end);
   gap: 1rem;
 }
 
@@ -172,7 +172,7 @@
 }
 
 .resumen-fila {
-  @include flex-base(row,space-between);
+  @include flex-base(row, space-between);
   margin-bottom: 1rem;
 }
 

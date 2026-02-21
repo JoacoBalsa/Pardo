@@ -6,10 +6,8 @@ footer {
   color: $secondary-color;
   @include flex-base(row,space-around);
   flex-wrap: wrap;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  z-index: 1000;
+  
 }
 
 .footer-brand {

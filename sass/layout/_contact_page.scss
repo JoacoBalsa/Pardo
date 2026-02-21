@@ -9,7 +9,7 @@
 }
 
 .contact-box {
-  @include flex-base(column,space-evenly,normal);
+  @include flex-base(column,space-around,normal);
   background-color: $primary-color;
   color: $secondary-color;
   padding: 2rem;
@@ -21,6 +21,11 @@
   }
 }
 
+.titulo-formulario{
+  text-align: center;
+  font-weight: $default-font-weight;
+}
+
 .input-form {
   background-color: $secondary-color;
   border: 2px solid $secondary-color;
@@ -29,6 +34,14 @@
   &::placeholder {
     color: $primary-color;
     opacity: 0.7;
+  }
+
+  &:focus{
+    outline: none;
+    border-color: $secondary-color;
+    box-shadow: 0 0 4px $secondary-color;
+    color: $primary-color;
+    background-color: #f7e2c2
   }
 }
 

@@ -9,10 +9,8 @@
 }
 
 @mixin transition($bg: $secondary-color,$color: $primary-color, $bc: $primary-color){
-    transition: transform 0.5s ease;
     &:hover{
         transform: translateY(-2px);
-        box-shadow: 1px solid $selection-color;
         background-color: $bg;
         color: $color;
         border-color: $bc;
@@ -31,7 +29,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
+  transition: transform 0.5s ease;
   &:hover {
     @include transition($color,$bg,$bg);
   }

@@ -4,4 +4,6 @@
 body {
   padding-top: 4rem;
   background-color: $secondary-color;
+  @include flex-base(column, flex-start, stretch);
+  min-height: 100vh;
 }

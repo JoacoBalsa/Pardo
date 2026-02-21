@@ -7,6 +7,15 @@
 body {
   padding-top: 4rem;
   background-color: #f7e7cd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .logo {
@@ -31,12 +40,8 @@ body {
   box-shadow: 1px 2px 5px black;
 }
 
-.link-estilo:hover {
-  transition: transform 0.5s ease;
-}
 .link-estilo:hover:hover {
   transform: translateY(-2px);
-  box-shadow: 1px solid #394e35;
 }
 .link-estilo:hover {
   color: #f7e7cd;
@@ -194,13 +199,10 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-.ver-detalle:hover {
   transition: transform 0.5s ease;
 }
 .ver-detalle:hover:hover {
   transform: translateY(-2px);
-  box-shadow: 1px solid #394e35;
   background-color: #f7e7cd;
   color: #273624;
   border-color: #273624;
@@ -239,7 +241,7 @@ header {
 .contact-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: normal;
   background-color: #273624;
   color: #f7e7cd;
@@ -252,6 +254,11 @@ header {
   letter-spacing: 0.05rem;
 }
 
+.titulo-formulario {
+  text-align: center;
+  font-weight: 600;
+}
+
 .input-form {
   background-color: #f7e7cd;
   border: 2px solid #f7e7cd;
@@ -261,6 +268,13 @@ header {
 .input-form::placeholder {
   color: #273624;
   opacity: 0.7;
+}
+.input-form:focus {
+  outline: none;
+  border-color: #f7e7cd;
+  box-shadow: 0 0 4px #f7e7cd;
+  color: #273624;
+  background-color: #f7e2c2;
 }
 
 .btn-enviar {
@@ -274,13 +288,10 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-.btn-enviar:hover {
   transition: transform 0.5s ease;
 }
 .btn-enviar:hover:hover {
   transform: translateY(-2px);
-  box-shadow: 1px solid #394e35;
   background-color: #273624;
   color: #f7e7cd;
   border-color: #f7e7cd;
@@ -522,13 +533,10 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-.btn-finalizar:hover {
   transition: transform 0.5s ease;
 }
 .btn-finalizar:hover:hover {
   transform: translateY(-2px);
-  box-shadow: 1px solid #394e35;
   background-color: #273624;
   color: #f7e7cd;
   border-color: #f7e7cd;
@@ -549,10 +557,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  z-index: 1000;
 }
 
 .footer-brand {
@@ -583,6 +588,11 @@ footer {
   color: #f7e7cd;
 }
 
+@media (max-width: 900px) {
+  .articulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
