@@ -38,6 +38,12 @@ main {
 }
 .boton-nav:hover {
   box-shadow: 1px 2px 5px black;
+  border: 2px solid #f7e7cd;
+}
+
+.icono-navbar {
+  color: #f7e7cd;
+  font-size: 2rem;
 }
 
 .link-estilo:hover:hover {
