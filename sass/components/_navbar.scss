@@ -31,9 +31,8 @@
 }
 
 
-.link-estilo:hover {
-  @include transition(null,null,null);
-  color: $secondary-color;
+.link-estilo {
+  @include transition(null,$secondary-color,null);
 }
 
 .carrito-badge {

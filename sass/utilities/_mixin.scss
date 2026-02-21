@@ -30,8 +30,6 @@
   text-decoration: none;
   display: inline-block;
   transition: transform 0.5s ease;
-  &:hover {
-    @include transition($color,$bg,$bg);
-  }
+  @include transition($color,$bg,$bg);
 }
 

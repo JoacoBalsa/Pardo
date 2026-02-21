@@ -46,10 +46,8 @@ main {
   font-size: 2rem;
 }
 
-.link-estilo:hover:hover {
-  transform: translateY(-2px);
-}
 .link-estilo:hover {
+  transform: translateY(-2px);
   color: #f7e7cd;
 }
 
@@ -207,7 +205,7 @@ header {
   display: inline-block;
   transition: transform 0.5s ease;
 }
-.ver-detalle:hover:hover {
+.ver-detalle:hover {
   transform: translateY(-2px);
   background-color: #f7e7cd;
   color: #273624;
@@ -296,7 +294,7 @@ header {
   display: inline-block;
   transition: transform 0.5s ease;
 }
-.btn-enviar:hover:hover {
+.btn-enviar:hover {
   transform: translateY(-2px);
   background-color: #273624;
   color: #f7e7cd;
@@ -541,7 +539,7 @@ header {
   display: inline-block;
   transition: transform 0.5s ease;
 }
-.btn-finalizar:hover:hover {
+.btn-finalizar:hover {
   transform: translateY(-2px);
   background-color: #273624;
   color: #f7e7cd;
